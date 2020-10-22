@@ -1,0 +1,58 @@
+body{
+    background: white;
+}
+
+.ang{
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.tut{
+    background: burlywood;
+}
+
+.mn {
+    position: center;
+    text-align: center;
+    padding: 55px;
+}
+
+.mn li{
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.mn a{
+    display: block;
+    background: sandybrown;
+    color: saddlebrown;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.mn .mn {
+    display: none;
+
+}
+
+.mn .mn li{
+    display: block;
+    padding: 6px 0px;
+}
+
+.mn li:hover .mn {
+    position: fixed;
+    display: block;
+    padding: 1px 0px;
+}
+
+.mn a:hover{
+    background: darkgoldenrod;
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<tr>
+    <table border="1">
+        <th>Id</th>
+        <th>Kunden Id</th>
+        <th>Mitarbeiter Id</th>
+        <th>Logo ID</th>
+        <th>Laender ID</th>
+        <th>Angebot Nummer</th>
+        <th>Beschreibung</th>
+        <th>Angebot Datum</th>
+        <th>Liefer Datum</th>
+        <th>Versands Datum</th>
+        <th>Destimmungsland Id</th>
+        <th>Stalllange</th>
+        <th>Stallbreite</th>
+        <th>Firsthohe</th>
+        <th>TraufenHohe</th>
+        <th>Giebelflache</th>
+        <th>Stallflache</th>
+        <th>Produktgruppe3 ID</th>
+        <th>Tiergewicht</th>
+        TU LOH :D
+
+</tr>
+    <tr th:each ="angebot : ${angebotshow}">
+
+        <td th:utext="${angebot.id}"></td>
+        <td th:utext="${angebot.kundenStamm.id}"></td>
+        <td th:utext="${angebot.mitarbeiter}"></td>
+        <!--<td th:utext="${angebot.logoId}"></td>-->
+        <td th:utext="${angebot.laenderId}"></td>
+        <td th:utext="${angebot.angebotNun}">...</td>
+        <td th:utext="${angebot.beschreibung}"></td>
+        <td th:utext="${angebot.angDat}"></td>
+        <td th:utext="${angebot.lieDat}"></td>
+        <td th:utext="${angebot.verDat}"></td>
+        <td th:utext="${angebot.bestimlandId}">...</td>
+        <td th:utext="${angebot.stallnage}"></td>
+        <td th:utext="${angebot.stallbreite}"></td>
+        <td th:utext="${angebot.firsthohe}"></td>
+        <td th:utext="${angebot.traufenhohe}"></td>
+        <td th:utext="${angebot.giebelFlache}">...</td>
+        <td th:utext="${angebot.stallFlache}"></td>
+        <td th:utext="${angebot.produktgruppe3Id}"></td>
+        <td th:utext="${angebot.tierGewicht}"></td>
+
+        <a th:href="@{'/oneangebot/' + ${angebot.id}}">"${angebot.id}"</a>
+</tr>
+</table>
+
+</body>
+</html>

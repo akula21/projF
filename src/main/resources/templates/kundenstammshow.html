@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kunden List</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<tr>
+    <table border="1">
+        <th>Id</th>
+        <th>Kunden Nummer</th>
+        <th>Kunde Name</th>
+        <th>Ansprechspartner</th>
+        <th>Adresse</th>
+        <th>Land ID</th>
+        <th>Telefon</th>
+        <th>Telefax</th>
+        <th>Mobil</th>
+        <th>E-Mail</th>
+        <th>Internet</th>
+        <th>Hinweis</th>
+        <th>Rabat</th>
+        </tr>
+        <tr th:each ="kundenstamm:${kundenstammshow}">
+            <td th:utext="${kundenstamm.id}">...</td>
+            <td th:utext="${kundenstamm.kundenNummer}"></td>
+            <td th:utext="${kundenstamm.kundeName}"></td>
+            <td th:utext="${kundenstamm.ansprechspartner}">...</td>
+            <td th:utext="${kundenstamm.adress}"></td>
+            <!--<td th:utext="${kundenstamm.land}"></td>-->
+            <td th:utext="${kundenstamm.telNum}">...</td>
+            <td th:utext="${kundenstamm.telFax}"></td>
+            <td th:utext="${kundenstamm.mobil}"></td>
+            <td th:utext="${kundenstamm.eMail}"></td>
+            <td th:utext="${kundenstamm.internet}">...</td>
+            <td th:utext="${kundenstamm.hinweis}"></td>
+            <td th:utext="${kundenstamm.rabat}"></td>
+
+        </tr>
+    </table>
+
+
+</body>
+</html>

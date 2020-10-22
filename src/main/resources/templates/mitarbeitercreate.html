@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mitarbeiter</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<form th:action="@{/mitarbeitercreate}"
+      th:object="${mitarbeitermodel}" method="POST">
+    Name:
+    <input type="text" th:field="*{name}" />
+    <br/>
+    Vorname:
+    <input type="text" th:field="*{vorname}" />
+    <br/>
+    Kurzname:
+    <input type="text" th:field="*{kurzname}" />
+    <br/>
+    TelNummer:
+    <input type="text" th:field="*{telNum}" />
+    <br/>
+    E-Mail:
+    <input type="text" th:field="*{email}" />
+    <br/>
+
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>

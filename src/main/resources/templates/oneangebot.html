@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr th:each ="angeboti : ${angebot}">
+    <a th:href="@{'/oneangebot/' + ${angebot.id}}">view</a>
+    <td th:utext="${angeboti.id}"></td>
+    <td th:utext="${angeboti.beschreibung}"></td>
+    <td th:utext="${angeboti.kundenStamm.eMail}"></td>
+</tr>
+</table>
+
+
+</body>
+</html>

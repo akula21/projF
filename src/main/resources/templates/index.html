@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit Database</title>
+    <link rel="stylesheet" th:href="@{/css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="tut">
+        <h1 class="ang">Angebotsgenerator</h1>
+    </div>
+
+   <p style="position: absolute"><img src="Cover.jpg" align="left" width="370" height="170">
+   </p>
+
+    <ul class="mn">
+        <li><a th:href="@{/angebotmenu}">Angebots</a>
+            <ul class="mn">
+                <li><a th:href="@{/angebotcreate}">Add Angebot</a></li>
+                <li><a th:href="@{/angebotshow}">Show Angebots</a></li>
+            </ul>
+        </li>
+
+        <li><a th:href="@{/kundenstammmenu}">Kundenstamms</a>
+            <ul class="mn">
+                <li><a th:href="@{/kundenstammcreate}">Add Kunden</a></li>
+                <li><a th:href="@{/kundenstammshow}">Show Kunden</a></li>
+            </ul>
+        </li>
+
+        <li><a th:href="@{/mitarbeitermenu}">Mitarbeiters</a>
+            <ul class="mn">
+
+                <li><a th:href="@{/mitarbeitercreate}">Add Mitarbeiter</a></li>
+
+                <li><a th:href="@{/mitarbeitershow}">Show Mitarbeiters</a></li>
+
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="mn" style="position: absolute" >
+        <li><a th:href="@{/#}">Angebot Finden</a></li>
+    </ul>
+
+    <ul class="mn">
+        <li><a th:href="@{#}">Climate System</a>
+            <ul class="mn">
+
+            <li><a th:href="@{/climasystemcreate}">Create</a></li>
+
+            <li><a th:href="@{/climasystemshow}">Show</a></li>
+
+            </ul>
+        </li>
+        <li><a th:href="@{#}">Logo</a></li>
+
+        <li><a th:href="@{#}">Laender</a></li>
+    </ul>
+
+    <ul class="mn">
+        <li><a th:href="@{#}">Kopf Teil</a></li>
+
+        <li><a th:href="@{#}">Verkaufsartickel</a></li>
+
+        <li><a th:href="@{#}">Kopfteil</a></li>
+    </ul>
+
+</body>
+</html>

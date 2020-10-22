@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<p>Shreiben sie wahlende information!<p>
+
+<form th:action="@{/angebotcreate}"
+      th:object="${angebotmodel}" method="POST">
+    LaenderID:
+    <input type="text" th:field="*{laenderId}" />
+    <br/>
+    Angebotnummer:
+    <input type="number" th:field="*{angebotNun}" />
+    <br/>
+    Beschreibung:
+    <input type="text" th:field="*{beschreibung}" />
+    <br/>
+    Angebotdatum:
+    <input type="date" th:field="*{angDat}" />
+    <br/>
+    Lieferdatum:
+    <input type="date" th:field="*{lieDat}" />
+    <br/>
+    Versandsdatum:
+    <input type="date" th:field="*{verDat}" />
+    <br/>
+    BestimmungslandID:
+    <input type="number" th:field="*{bestimlandId}" />
+    <br/>
+    Stalllange:
+    <input type="text" step="any" th:field="*{stallnage}" />
+    <br/>
+    Stallbreite:
+    <input type="text" step="any" th:field="*{stallbreite}" />
+    <br/>
+    Firsthohe:
+    <input type="text" step="any" th:field="*{firsthohe}" />
+    <br/>
+    Traufenhohe:
+    <input type="text" step="any" th:field="*{traufenhohe}" />
+    <br/>
+    Giebelflache:
+    <input type="text" step="any" th:field="*{giebelFlache}" />
+    <br/>
+    Stallflache:
+    <input type="text" step="any" th:field="*{stallFlache}" />
+    <br/>
+    Broduktdruppe3ID:
+    <input type="number" th:field="*{produktgruppe3Id}" />
+    <br/>
+    Tiergewicht:
+    <input type="number" step="any" th:field="*{tierGewicht}" />
+    <br/>
+    id:
+    <input type="number" step="any" th:field="*{kundenStamm}" />
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>

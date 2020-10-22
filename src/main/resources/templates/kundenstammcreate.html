@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>KundenStamm</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<form th:action="@{/kundenstammcreate}"
+      th:object="${kundenstammmodel}" method="POST">
+    KundenNummer:
+    <input type="number" th:field="*{kundenNummer}" />
+    <br/>
+    Kunde Name:
+    <input type="text" th:field="*{kundeName}" />
+    <br/>
+    Ansprechspartner:
+    <input type="text" th:field="*{ansprechspartner}" />
+    <br/>
+    Adresse:
+    <input type="text" th:field="*{adress}" />
+    <br/>
+    <!--LandID:-->
+    <!--<input type="text" th:field="*{laender}" />-->
+    <!--<br/>-->
+    Telefon:
+    <input type="number" th:field="*{telNum}" />
+    <br/>
+    Telefax:
+    <input type="number" th:field="*{telFax}" />
+    <br/>
+    Mobil:
+    <input type="number" th:field="*{mobil}" />
+    <br/>
+    E-Mail:
+    <input type="text" th:field="*{eMail}" />
+    <br/>
+    Internet:
+    <input type="text" th:field="*{internet}" />
+    <br/>
+    Hinweis:
+    <input type="text" th:field="*{hinweis}" />
+    <br/>
+    Rabat:
+    <input type="text" th:field="*{rabat}" />
+    <br/>
+
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
