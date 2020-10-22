@@ -16,7 +16,6 @@ import java.util.List;
 
 // LOl
 
-// Lol 
 
 @Controller
 public class AngebotController {
